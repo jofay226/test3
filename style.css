@@ -1,0 +1,20 @@
+.parent{
+    border: solid;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.parent > div {
+    border: solid;
+    flex-grow: 1;
+}
+
+.parent > div:nth-child(even){
+    background-color: yellow;
+}
+.parent > div:nth-child(odd){
+    background-color: green;
+}
